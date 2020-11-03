@@ -1,7 +1,9 @@
 const express = require('express');
 const app = express();
 const bodyParser = require('body-parser');
-app.listen(4000, function () {});
+const port = process.env.PORT || 4000;
+
+app.listen(port, function () {});
 
 //Classes to import for wolfram api
 const WolframAlphaAPI = require('wolfram-alpha-api');
