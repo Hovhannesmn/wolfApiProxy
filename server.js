@@ -4,7 +4,7 @@ const app = express();
 const bodyParser = require('body-parser');
 const port = process.env.PORT || 4000;
 
-cors();
+app.use(cors());
 app.listen(port, function () {});
 
 //Classes to import for wolfram api
