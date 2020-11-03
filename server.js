@@ -4,10 +4,7 @@ const app = express();
 const bodyParser = require('body-parser');
 const port = process.env.PORT || 4000;
 
-app.use(cors({
-  origin: 'https://draw-plot-calculator.herokuapp.com',
-  optionsSuccessStatus: 200
-}));
+app.use(cors());
 
 //Classes to import for wolfram api
 const WolframAlphaAPI = require('wolfram-alpha-api');
